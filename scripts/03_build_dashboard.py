@@ -207,6 +207,8 @@ section.soft{background:var(--bg-soft)}
 .card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:22px 22px 12px}
 section.soft .card{background:#fff}
 .card h3{font-size:14px;font-weight:600}
+.card h3 .h3zh{font-size:12px;font-weight:400;color:var(--ink-3);margin-left:8px}
+.finding h4 .h3zh{display:block;font-size:12.5px;font-weight:400;color:var(--ink-3);margin-top:3px;margin-left:0}
 .card .sub{font-size:12px;color:var(--ink-3);margin-top:2px}
 .chart{width:100%;height:340px;margin-top:6px}
 .chart.tall{height:380px}
@@ -256,7 +258,7 @@ footer ul{padding-left:16px}
   <div class="wrap">
     <div class="brand">Fitness × KOL Analytics</div>
     <div class="links">
-      <a href="#platforms">Platforms</a><a href="#tiers">Tiers</a><a href="#timing">Timing</a><a href="#budget">Budget</a><a href="__REPO_URL__">GitHub ↗</a>
+      <a href="#platforms">Platforms 平台</a><a href="#tiers">Tiers 层级</a><a href="#timing">Timing 时间</a><a href="#budget">Budget 预算</a><a href="__REPO_URL__">GitHub ↗</a>
     </div>
   </div>
 </nav>
@@ -288,10 +290,10 @@ footer ul{padding-left:16px}
       <div class="takeaway">#Fitness ranks 10/10 on pooled engagement rate (11.5%) while carrying the highest average views (2.79M) and the largest post count (n=497).<div class="z">垂类互动率排名第 10/10，但平均曝光第 1——投放策略必须靠结构与效率取胜，而非垂类天然红利。</div></div>
     </div>
     <div class="card">
-      <h3>Pooled engagement rate by vertical</h3>
+      <h3>Pooled engagement rate by vertical<span class="h3zh">各垂类合并互动率</span></h3>
       <div class="sub">Interactions ÷ views, all posts per hashtag · 各话题合并互动率（互动量÷曝光量）</div>
       <div id="ch_vertical" class="chart"></div>
-      <div class="src">Source: q03_vertical_benchmark · n = 4,637 posts after data-quality filtering</div>
+      <div class="src">Source 数据来源: q03_vertical_benchmark · n = 4,637 posts after data-quality filtering（经数据质量过滤后的有效帖子数）</div>
     </div>
   </div>
 </section>
@@ -307,16 +309,16 @@ footer ul{padding-left:16px}
     </div>
     <div class="grid2">
       <div class="card">
-        <h3>Engagement rate by platform</h3>
+        <h3>Engagement rate by platform<span class="h3zh">分平台互动率</span></h3>
         <div class="sub">Pooled vs median ER, #Fitness · 合并与中位互动率（#Fitness）</div>
         <div id="ch_platform" class="chart"></div>
-        <div class="src">Source: q02_platform_fitness</div>
+        <div class="src">Source 数据来源: q02_platform_fitness</div>
       </div>
       <div class="card">
-        <h3>Engagement composition</h3>
-        <div class="sub">Share of likes / shares / comments, #Fitness · 互动结构占比</div>
+        <h3>Engagement composition<span class="h3zh">互动结构</span></h3>
+        <div class="sub">Share of likes / shares / comments, #Fitness · 点赞/分享/评论占比（#Fitness）</div>
         <div id="ch_mix" class="chart"></div>
-        <div class="src">Source: q02_platform_fitness · Instagram has the highest share component (17.0%)</div>
+        <div class="src">Source 数据来源: q02_platform_fitness · Instagram has the highest share component (17.0%)（Instagram 分享占比最高 17.0%）</div>
       </div>
     </div>
   </div>
@@ -333,16 +335,16 @@ footer ul{padding-left:16px}
     </div>
     <div class="grid2">
       <div class="card">
-        <h3>Median engagement rate by reach tier</h3>
+        <h3>Median engagement rate by reach tier<span class="h3zh">分层级中位互动率</span></h3>
         <div class="sub">Fitness vs market-wide · 健身垂类 vs 全市场</div>
         <div id="ch_tier" class="chart"></div>
-        <div class="src">Source: q04_tier_fitness, q04b_tier_all · Tier = dataset-wide views quartile (proxy construct *)</div>
+        <div class="src">Source 数据来源: q04_tier_fitness, q04b_tier_all · Tier = dataset-wide views quartile (proxy construct *)（层级=全量曝光四分位代理构造）</div>
       </div>
       <div class="card">
-        <h3>Share rate by tier — virality concentrates at the base</h3>
-        <div class="sub">Shares ÷ views, #Fitness · 分享率（病毒传播代理）</div>
+        <h3>Share rate by tier<span class="h3zh">分层级分享率——病毒传播集中于底层</span></h3>
+        <div class="sub">Shares ÷ views, #Fitness · 分享率（分享量÷曝光量，病毒传播代理）</div>
         <div id="ch_share" class="chart"></div>
-        <div class="src">Source: q04_tier_fitness · T1 share rate 5.6% vs T4 1.1%</div>
+        <div class="src">Source 数据来源: q04_tier_fitness · T1 share rate 5.6% vs T4 1.1%（T1 分享率为 T4 的近 5 倍）</div>
       </div>
     </div>
   </div>
@@ -359,16 +361,16 @@ footer ul{padding-left:16px}
     </div>
     <div class="grid2">
       <div class="card">
-        <h3>Platform × format engagement heatmap</h3>
-        <div class="sub">Pooled ER %, #Fitness · 合并互动率热力图</div>
+        <h3>Platform × format engagement heatmap<span class="h3zh">平台×形式互动率热力图</span></h3>
+        <div class="sub">Pooled ER %, #Fitness · 合并互动率热力图（颜色越深互动率越高）</div>
         <div id="ch_heat" class="chart tall"></div>
-        <div class="src">Source: q05_format_platform_heatmap · cell n = 14–51</div>
+        <div class="src">Source 数据来源: q05_format_platform_heatmap · cell n = 14–51（每格样本量 14–51 帖）</div>
       </div>
       <div class="card">
-        <h3>Format ranking, all platforms combined</h3>
-        <div class="sub">Pooled ER %, #Fitness · 形式整体排名</div>
+        <h3>Format ranking, all platforms combined<span class="h3zh">形式整体排名</span></h3>
+        <div class="sub">Pooled ER %, #Fitness · 全平台合并后的形式互动率排名</div>
         <div id="ch_format" class="chart tall"></div>
-        <div class="src">Source: q09_format_fitness</div>
+        <div class="src">Source 数据来源: q09_format_fitness</div>
       </div>
     </div>
   </div>
@@ -385,16 +387,16 @@ footer ul{padding-left:16px}
     </div>
     <div class="grid2">
       <div class="card">
-        <h3>Engagement rate by day of week</h3>
-        <div class="sub">Pooled ER %, #Fitness · 星期互动率</div>
+        <h3>Engagement rate by day of week<span class="h3zh">星期互动率</span></h3>
+        <div class="sub">Pooled ER %, #Fitness · 按发布星期聚合的合并互动率</div>
         <div id="ch_dow" class="chart"></div>
-        <div class="src">Source: q07_dow · n = 56–86 per day</div>
+        <div class="src">Source 数据来源: q07_dow · n = 56–86 per day（每日样本量 56–86 帖）</div>
       </div>
       <div class="card">
-        <h3>Monthly engagement trend by platform</h3>
-        <div class="sub">Pooled ER %, #Fitness, 2022-01 – 2023-12 · 月度互动率</div>
+        <h3>Monthly engagement trend by platform<span class="h3zh">分平台月度互动率趋势</span></h3>
+        <div class="sub">Pooled ER %, #Fitness, 2022-01 – 2023-12 · 月度合并互动率（24 个月）</div>
         <div id="ch_month" class="chart"></div>
-        <div class="src">Source: q06_monthly_trend · monthly n per platform = 1–11 (small cells, read as direction only)</div>
+        <div class="src">Source 数据来源: q06_monthly_trend · monthly n per platform = 1–11 (small cells, read as direction only)（单元格样本量小，仅作方向参考）</div>
       </div>
     </div>
   </div>
@@ -417,16 +419,16 @@ footer ul{padding-left:16px}
     </div>
     <div class="grid2" style="margin-top:24px">
       <div class="card">
-        <h3>Budget reallocation by platform</h3>
-        <div class="sub">Δ share in percentage points (efficiency plan − activity plan) · 预算份额变化</div>
+        <h3>Budget reallocation by platform<span class="h3zh">分平台预算再分配</span></h3>
+        <div class="sub">Δ share in percentage points (efficiency plan − activity plan) · 预算份额变化（效率方案 − 现状方案，右增左减）</div>
         <div id="ch_budget" class="chart"></div>
-        <div class="src">Source: budget_model.csv · cells aggregated to platform level</div>
+        <div class="src">Source 数据来源: budget_model.csv · cells aggregated to platform level（单元聚合至平台层）</div>
       </div>
       <div class="card">
-        <h3>Top-5 recommended cells</h3>
+        <h3>Top-5 recommended cells<span class="h3zh">推荐预算 Top-5 单元</span></h3>
         <div class="sub">Recommended budget share · 推荐预算份额最高的平台×形式单元</div>
         <div id="ch_cells" class="chart"></div>
-        <div class="src">Source: budget_model.csv · efficiency = expected engagements per $1K</div>
+        <div class="src">Source 数据来源: budget_model.csv · efficiency = expected engagements per $1K（效率=每千美元预期互动量）</div>
       </div>
     </div>
     <ul class="notes">
@@ -446,11 +448,11 @@ footer ul{padding-left:16px}
       <p class="zh">核心发现与可执行建议（完整推导见仓库内策略报告）。</p>
     </div>
     <div class="findings">
-      <div class="finding"><div><h4>Anchor the plan on Instagram, use TikTok for efficient reach, not engagement</h4><p>Instagram leads fitness ER (<b>13.1%</b> pooled). TikTok does not over-perform in this data (<b>11.0%</b>) despite its reputation — buy it for cheap reach, not interaction. <span style="color:var(--ink-3)">Instagram 为主阵地；TikTok 定位“性价比曝光”而非互动引擎。</span></p></div></div>
-      <div class="finding"><div><h4>Shift spend toward emerging creators — the strongest effect in the data</h4><p>T1 (≤1.48M views) median ER <b>39.5%</b> vs T4 <b>7.6%</b>; share rate <b>5.6%</b> vs <b>1.1%</b>. A portfolio of many emerging creators beats a few mega placements on engagement-per-dollar*. <span style="color:var(--ink-3)">层级效应是全场最大变量，预算应向中腰部倾斜。</span></p></div></div>
-      <div class="finding"><div><h4>Customise format per platform; never buy TikTok Live in this vertical</h4><p>Instagram Live <b>17.1%</b> is the single best cell; TikTok Live <b>7.1%</b> the worst. Long-form leads on TikTok (<b>13.4%</b>) and Instagram (<b>14.1%</b>). <span style="color:var(--ink-3)">直播押 Instagram，长视频押 TikTok，短视频组合投放。</span></p></div></div>
-      <div class="finding"><div><h4>Schedule hero content on Sundays and Fridays</h4><p>Sunday pooled ER <b>12.5%</b>, Monday weakest <b>10.9%</b> — a ~1.6pp gap that exceeds the entire format effect. <span style="color:var(--ink-3)">周日/周五发布重点内容，周一仅作常规更新。</span></p></div></div>
-      <div class="finding"><div><h4>For international BD: the UK is the efficiency outlier worth prioritising</h4><p>UK leads all regions in fitness ER (<b>13.0%</b>) with above-average views; Brazil trails (<b>10.0%</b>) despite the highest reach. <span style="color:var(--ink-3)">英国市场互动效率居首，适合作为出海投放首选测试市场。</span></p></div></div>
+      <div class="finding"><div><h4>Anchor the plan on Instagram, use TikTok for efficient reach, not engagement<span class="h3zh">以 Instagram 为主阵地，TikTok 定位性价比曝光</span></h4><p>Instagram leads fitness ER (<b>13.1%</b> pooled). TikTok does not over-perform in this data (<b>11.0%</b>) despite its reputation — buy it for cheap reach, not interaction. <span style="color:var(--ink-3)">Instagram 互动率第一；TikTok 在本数据中互动一般，定位为"性价比曝光"而非互动引擎。</span></p></div></div>
+      <div class="finding"><div><h4>Shift spend toward emerging creators — the strongest effect in the data<span class="h3zh">预算向中腰部创作者倾斜——全场最大效应</span></h4><p>T1 (≤1.48M views) median ER <b>39.5%</b> vs T4 <b>7.6%</b>; share rate <b>5.6%</b> vs <b>1.1%</b>. A portfolio of many emerging creators beats a few mega placements on engagement-per-dollar*. <span style="color:var(--ink-3)">同等预算下，多个中腰部达人组合的单位互动效率优于少数头部达人*。</span></p></div></div>
+      <div class="finding"><div><h4>Customise format per platform; never buy TikTok Live in this vertical<span class="h3zh">形式按平台定制，本垂类不买 TikTok 直播</span></h4><p>Instagram Live <b>17.1%</b> is the single best cell; TikTok Live <b>7.1%</b> the worst. Long-form leads on TikTok (<b>13.4%</b>) and Instagram (<b>14.1%</b>). <span style="color:var(--ink-3)">直播押 Instagram，长视频押 TikTok，短视频组合投放。</span></p></div></div>
+      <div class="finding"><div><h4>Schedule hero content on Sundays and Fridays<span class="h3zh">重点内容排期周日与周五</span></h4><p>Sunday pooled ER <b>12.5%</b>, Monday weakest <b>10.9%</b> — a ~1.6pp gap that exceeds the entire format effect. <span style="color:var(--ink-3)">周日与周一相差约 1.6 个百分点，超过形式维度全部差异；周一仅作常规更新。</span></p></div></div>
+      <div class="finding"><div><h4>For international BD: the UK is the efficiency outlier worth prioritising<span class="h3zh">国际化 BD：英国是值得优先测试的效率市场</span></h4><p>UK leads all regions in fitness ER (<b>13.0%</b>) with above-average views; Brazil trails (<b>10.0%</b>) despite the highest reach. <span style="color:var(--ink-3)">英国互动效率居首且曝光高于均值；巴西曝光最高但互动垫底。</span></p></div></div>
     </div>
   </div>
 </section>
@@ -460,7 +462,7 @@ footer ul{padding-left:16px}
     <div class="cols">
       <div>
         <h4>Data &amp; provenance · 数据来源</h4>
-        <p>“Viral Social Media Trends &amp; Engagement Analysis”, Atharva Soundankar, Kaggle, <b>CC0 Public Domain</b>. 5,000 posts, 2022-01-01 – 2023-12-30; 4,637 retained after excluding 363 rows with interactions &gt; views (impossible values, fully documented). SHA-256 fingerprints in <code>data/processed/data_quality_report.md</code>.</p>
+        <p>“Viral Social Media Trends &amp; Engagement Analysis”, Atharva Soundankar, Kaggle, <b>CC0 Public Domain</b>. 5,000 posts, 2022-01-01 – 2023-12-30; 4,637 retained after excluding 363 rows with interactions &gt; views (impossible values, fully documented). SHA-256 fingerprints in <code>data/processed/data_quality_report.md</code>.<br>5,000 条爆款帖，剔除 363 条互动量&gt;曝光量的不可能记录后保留 4,637 条；原始文件指纹见仓库质量报告，全程可追溯。</p>
       </div>
       <div>
         <h4>Limitations · 局限性</h4>
@@ -473,7 +475,7 @@ footer ul{padding-left:16px}
       </div>
       <div>
         <h4>Reproduce · 复现</h4>
-        <p><code>python scripts/01_clean_data.py → 02_run_analysis.py → 03_build_dashboard.py</code></p>
+        <p><code>python scripts/01_clean_data.py → 02_run_analysis.py → 03_build_dashboard.py</code><br>依次运行三个脚本即可从原始数据完整复现本看板。</p>
         <p style="margin-top:8px"><a href="__REPO_URL__">GitHub repository ↗</a><br><a href="__DATA_URL__">Dataset on Kaggle ↗</a></p>
       </div>
     </div>
@@ -510,7 +512,7 @@ document.getElementById("k5").textContent = "+"+D.budget_summary.projected_lift_
 
 /* 01 vertical */
 mk("ch_vertical",{
-  tooltip:{...tip, formatter:p=>`<b>${p.name}</b><br/>Pooled ER: ${p.value}%<br/>Posts: ${D.vertical.n_posts[p.dataIndex]}<br/>Avg views: ${fmtM(D.vertical.avg_views[p.dataIndex])}`},
+  tooltip:{...tip, formatter:p=>`<b>${p.name}</b><br/>Pooled ER 合并互动率: ${p.value}%<br/>Posts 帖子数: ${D.vertical.n_posts[p.dataIndex]}<br/>Avg views 平均曝光: ${fmtM(D.vertical.avg_views[p.dataIndex])}`},
   grid:{left:48,right:20,top:18,bottom:52},
   xAxis:{type:"category",data:D.vertical.hashtags,...baseAxis,axisLabel:{...baseAxis.axisLabel,rotate:28}},
   yAxis:{type:"value",...baseAxis,axisLabel:{...baseAxis.axisLabel,formatter:"{value}%"}},
@@ -519,14 +521,14 @@ mk("ch_vertical",{
 
 /* 02 platform */
 mk("ch_platform",{
-  tooltip:{...tip,trigger:"axis",axisPointer:{type:"shadow"},formatter:ps=>`<b>${ps[0].name}</b><br/>`+ps.map(p=>`${p.marker} ${p.seriesName}: ${p.value}%`).join("<br/>")+`<br/>Posts: ${D.platform.n_posts[ps[0].dataIndex]}`},
+  tooltip:{...tip,trigger:"axis",axisPointer:{type:"shadow"},formatter:ps=>`<b>${ps[0].name}</b><br/>`+ps.map(p=>`${p.marker} ${p.seriesName}: ${p.value}%`).join("<br/>")+`<br/>Posts 帖子数: ${D.platform.n_posts[ps[0].dataIndex]}`},
   legend:{top:0,right:0,icon:"roundRect",itemWidth:10,itemHeight:10,textStyle:{color:"#6e6e73",fontSize:11,fontFamily:FONT}},
   grid:{left:48,right:16,top:34,bottom:30},
   xAxis:{type:"category",data:D.platform.names,...baseAxis},
   yAxis:{type:"value",...baseAxis,axisLabel:{...baseAxis.axisLabel,formatter:"{value}%"}},
   series:[
-    {name:"Pooled ER",type:"bar",barWidth:"30%",data:D.platform.pooled_er,itemStyle:{color:ACCENT,borderRadius:[4,4,0,0]}},
-    {name:"Median ER",type:"bar",barWidth:"30%",data:D.platform.median_er,itemStyle:{color:"#c7c7cc",borderRadius:[4,4,0,0]}}
+    {name:"Pooled ER 合并互动率",type:"bar",barWidth:"30%",data:D.platform.pooled_er,itemStyle:{color:ACCENT,borderRadius:[4,4,0,0]}},
+    {name:"Median ER 中位互动率",type:"bar",barWidth:"30%",data:D.platform.median_er,itemStyle:{color:"#c7c7cc",borderRadius:[4,4,0,0]}}
   ]
 });
 
@@ -538,28 +540,28 @@ mk("ch_mix",{
   xAxis:{type:"value",max:100,...baseAxis,axisLabel:{...baseAxis.axisLabel,formatter:"{value}%"}},
   yAxis:{type:"category",data:D.platform.names.slice().reverse(),...baseAxis},
   series:[
-    {name:"Likes",stack:"m",type:"bar",barWidth:22,data:D.platform.like_share.slice().reverse(),itemStyle:{color:ACCENT}},
-    {name:"Shares",stack:"m",type:"bar",data:D.platform.share_share.slice().reverse(),itemStyle:{color:TEAL}},
-    {name:"Comments",stack:"m",type:"bar",data:D.platform.comment_share.slice().reverse(),itemStyle:{color:"#c7c7cc",borderRadius:[0,4,4,0]}}
+    {name:"Likes 点赞",stack:"m",type:"bar",barWidth:22,data:D.platform.like_share.slice().reverse(),itemStyle:{color:ACCENT}},
+    {name:"Shares 分享",stack:"m",type:"bar",data:D.platform.share_share.slice().reverse(),itemStyle:{color:TEAL}},
+    {name:"Comments 评论",stack:"m",type:"bar",data:D.platform.comment_share.slice().reverse(),itemStyle:{color:"#c7c7cc",borderRadius:[0,4,4,0]}}
   ]
 });
 
 /* 03 tier */
 mk("ch_tier",{
-  tooltip:{...tip,trigger:"axis",axisPointer:{type:"shadow"},formatter:ps=>`<b>${D.tier.names[ps[0].dataIndex]}</b><br/>`+ps.map(p=>`${p.marker} ${p.seriesName}: ${p.value}%`).join("<br/>")+`<br/>Fitness n: ${D.tier.n_posts[ps[0].dataIndex]} · avg views: ${fmtM(D.tier.avg_views[ps[0].dataIndex])}`},
+  tooltip:{...tip,trigger:"axis",axisPointer:{type:"shadow"},formatter:ps=>`<b>${D.tier.names[ps[0].dataIndex]}</b><br/>`+ps.map(p=>`${p.marker} ${p.seriesName}: ${p.value}%`).join("<br/>")+`<br/>Fitness n 垂类样本: ${D.tier.n_posts[ps[0].dataIndex]} · avg views 平均曝光: ${fmtM(D.tier.avg_views[ps[0].dataIndex])}`},
   legend:{top:0,right:0,icon:"roundRect",itemWidth:10,itemHeight:10,textStyle:{color:"#6e6e73",fontSize:11,fontFamily:FONT}},
   grid:{left:48,right:16,top:34,bottom:30},
   xAxis:{type:"category",data:D.tier.names,...baseAxis},
   yAxis:{type:"value",...baseAxis,axisLabel:{...baseAxis.axisLabel,formatter:"{value}%"}},
   series:[
-    {name:"Fitness",type:"bar",barWidth:"30%",data:D.tier.fitness_median_er,itemStyle:{color:ACCENT,borderRadius:[4,4,0,0]}},
-    {name:"Market-wide",type:"bar",barWidth:"30%",data:D.tier.market_median_er,itemStyle:{color:"#c7c7cc",borderRadius:[4,4,0,0]}}
+    {name:"Fitness 健身垂类",type:"bar",barWidth:"30%",data:D.tier.fitness_median_er,itemStyle:{color:ACCENT,borderRadius:[4,4,0,0]}},
+    {name:"Market-wide 全市场",type:"bar",barWidth:"30%",data:D.tier.market_median_er,itemStyle:{color:"#c7c7cc",borderRadius:[4,4,0,0]}}
   ]
 });
 
 /* 03 share rate */
 mk("ch_share",{
-  tooltip:{...tip,formatter:p=>`<b>${p.name}</b><br/>Share rate: ${p.value}%<br/>Fitness n: ${D.tier.n_posts[p.dataIndex]}`},
+  tooltip:{...tip,formatter:p=>`<b>${p.name}</b><br/>Share rate 分享率: ${p.value}%<br/>Fitness n 垂类样本: ${D.tier.n_posts[p.dataIndex]}`},
   grid:{left:48,right:16,top:18,bottom:30},
   xAxis:{type:"category",data:D.tier.names,...baseAxis},
   yAxis:{type:"value",...baseAxis,axisLabel:{...baseAxis.axisLabel,formatter:"{value}%"}},
@@ -570,7 +572,7 @@ mk("ch_share",{
 
 /* 04 heatmap */
 mk("ch_heat",{
-  tooltip:{...tip,formatter:p=>`<b>${D.heat.platforms[p.value[0]]} · ${D.heat.formats[p.value[1]]}</b><br/>Pooled ER: ${p.value[2]}%<br/>Posts: ${p.value[3]}`},
+  tooltip:{...tip,formatter:p=>`<b>${D.heat.platforms[p.value[0]]} · ${D.heat.formats[p.value[1]]}</b><br/>Pooled ER 合并互动率: ${p.value[2]}%<br/>Posts 帖子数: ${p.value[3]}`},
   grid:{left:96,right:20,top:10,bottom:56},
   xAxis:{type:"category",data:D.heat.platforms,...baseAxis,splitLine:{show:false}},
   yAxis:{type:"category",data:D.heat.formats,...baseAxis,splitLine:{show:false}},
@@ -583,7 +585,7 @@ mk("ch_heat",{
 
 /* 04 format ranking */
 mk("ch_format",{
-  tooltip:{...tip,formatter:p=>`<b>${p.name}</b><br/>Pooled ER: ${p.value}%<br/>Posts: ${D.format.n_posts[p.dataIndex]}<br/>Share rate: ${D.format.share_rate[p.dataIndex]}%`},
+  tooltip:{...tip,formatter:p=>`<b>${p.name}</b><br/>Pooled ER 合并互动率: ${p.value}%<br/>Posts 帖子数: ${D.format.n_posts[p.dataIndex]}<br/>Share rate 分享率: ${D.format.share_rate[p.dataIndex]}%`},
   grid:{left:110,right:36,top:14,bottom:30},
   xAxis:{type:"value",...baseAxis,axisLabel:{...baseAxis.axisLabel,formatter:"{value}%"}},
   yAxis:{type:"category",data:D.format.names.slice().reverse(),...baseAxis},
@@ -593,7 +595,7 @@ mk("ch_format",{
 
 /* 05 dow */
 mk("ch_dow",{
-  tooltip:{...tip,formatter:p=>`<b>${p.name}</b><br/>Pooled ER: ${p.value}%<br/>Posts: ${D.dow.n_posts[p.dataIndex]}<br/>Avg views: ${fmtM(D.dow.avg_views[p.dataIndex])}`},
+  tooltip:{...tip,formatter:p=>`<b>${p.name}</b><br/>Pooled ER 合并互动率: ${p.value}%<br/>Posts 帖子数: ${D.dow.n_posts[p.dataIndex]}<br/>Avg views 平均曝光: ${fmtM(D.dow.avg_views[p.dataIndex])}`},
   grid:{left:48,right:16,top:18,bottom:30},
   xAxis:{type:"category",data:D.dow.names.map(d=>d.slice(0,3)),...baseAxis},
   yAxis:{type:"value",min:10,max:13,...baseAxis,axisLabel:{...baseAxis.axisLabel,formatter:"{value}%"}},
@@ -616,7 +618,7 @@ mk("ch_month",{
 
 /* 06 budget */
 mk("ch_budget",{
-  tooltip:{...tip,formatter:p=>{const i=p.dataIndex;return `<b>${p.name}</b><br/>Current share: ${D.budget_platform.current_share[i]}%<br/>Recommended: ${D.budget_platform.recommended_share[i]}%<br/>Δ ${p.value>0?"+":""}${p.value} pp`;}},
+  tooltip:{...tip,formatter:p=>{const i=p.dataIndex;return `<b>${p.name}</b><br/>Current share 当前份额: ${D.budget_platform.current_share[i]}%<br/>Recommended 推荐份额: ${D.budget_platform.recommended_share[i]}%<br/>Δ 变化 ${p.value>0?"+":""}${p.value} pp`;}},
   grid:{left:80,right:44,top:18,bottom:30},
   xAxis:{type:"value",...baseAxis,axisLabel:{...baseAxis.axisLabel,formatter:v=>(v>0?"+":"")+v+" pp"}},
   yAxis:{type:"category",data:D.budget_platform.names,...baseAxis},
@@ -626,7 +628,7 @@ mk("ch_budget",{
 
 /* 06 top cells */
 mk("ch_cells",{
-  tooltip:{...tip,formatter:p=>`<b>${p.name}</b><br/>Recommended share: ${p.value}%<br/>Efficiency: ${fmtM(D.budget_top_cells.eff[p.dataIndex])} engagements / $1K<br/>Observed pooled ER: ${D.budget_top_cells.er[p.dataIndex]}%`},
+  tooltip:{...tip,formatter:p=>`<b>${p.name}</b><br/>Recommended share 推荐份额: ${p.value}%<br/>Efficiency 效率: ${fmtM(D.budget_top_cells.eff[p.dataIndex])} engagements / $1K（互动量/千美元）<br/>Observed pooled ER 观测合并互动率: ${D.budget_top_cells.er[p.dataIndex]}%`},
   grid:{left:170,right:44,top:18,bottom:30},
   xAxis:{type:"value",...baseAxis,axisLabel:{...baseAxis.axisLabel,formatter:"{value}%"}},
   yAxis:{type:"category",data:D.budget_top_cells.labels.slice().reverse(),...baseAxis,axisLabel:{...baseAxis.axisLabel,fontSize:11}},
