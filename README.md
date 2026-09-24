@@ -1,11 +1,11 @@
-# Fitness Content × KOL Marketing Analytics
+﻿# Fitness Content × KOL Marketing Analytics
 
 **运动健身垂类内容营销与 KOL 投放数据分析 · An end-to-end, reproducible data portfolio project**
 
-[![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-GitHub%20Pages-0071e3)](https://wdnmdlgb.github.io/fitness-kol-marketing-analytics/)
+[![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-GitHub%20Pages-0071e3)](https://wangziyu618.github.io/fitness-kol-marketing-analytics/)
 [![Data](https://img.shields.io/badge/Data-Kaggle%20CC0-lightgrey)](https://www.kaggle.com/datasets/atharvasoundankar/viral-social-media-trends-and-engagement-analysis)
 
-**Live dashboard · 在线看板 → https://wdnmdlgb.github.io/fitness-kol-marketing-analytics/**
+**Live dashboard · 在线看板 → https://wangziyu618.github.io/fitness-kol-marketing-analytics/**
 
 ---
 
@@ -70,5 +70,5 @@ python scripts/03_build_dashboard.py  # builds single-file docs/index.html (work
 - 原始 `Engagement_Level` 标签经校验不可靠，分析中不采用；全部指标可复算；
 - 推断性结论（层级代理、预算模型）在仓库与看板中均以 `*` 显式标注。
 
-**在线看板**：https://wdnmdlgb.github.io/fitness-kol-marketing-analytics/ （单文件、离线可用、仅悬停交互）
+**在线看板**：https://wangziyu618.github.io/fitness-kol-marketing-analytics/ （单文件、离线可用、仅悬停交互）
 **策略报告**：[report/STRATEGY_REPORT.md](report/STRATEGY_REPORT.md) ｜ **复现步骤**：见上方 Quickstart（Python 3.10+，仅依赖 pandas）

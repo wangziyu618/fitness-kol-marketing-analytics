@@ -646,7 +646,7 @@ def main() -> None:
         TEMPLATE
         .replace("__ECHARTS__", echarts_js)
         .replace("__DATA_JSON__", json.dumps(payload, ensure_ascii=False))
-        .replace("__REPO_URL__", "https://github.com/wdnmdlgb/fitness-kol-marketing-analytics")
+        .replace("__REPO_URL__", "https://github.com/wangziyu618/fitness-kol-marketing-analytics")
         .replace("__DATA_URL__", "https://www.kaggle.com/datasets/atharvasoundankar/viral-social-media-trends-and-engagement-analysis")
     )
     out = OUT / "index.html"
