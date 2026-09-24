@@ -1,0 +1,22 @@
+{
+  "budget": {
+    "total_budget_usd": 100000,
+    "current_expected_engagements": 41201755,
+    "recommended_expected_engagements": 62634953,
+    "projected_lift_pct": 52.0,
+    "assumption": "成本为公开报价区间中点的说明性取值；预期互动=预算/单帖成本×帖均互动。Cost figures are illustrative midpoints of published rate ranges; expected engagements = budget / cost-per-post × avg interactions-per-post."
+  },
+  "kpis": {
+    "total_posts": 4637,
+    "fitness_posts": 497,
+    "date_min": "2022-01-01",
+    "date_max": "2023-12-30",
+    "fitness_pooled_er": 0.115438,
+    "fitness_median_er": 0.112109,
+    "market_pooled_er": 0.120474,
+    "best_platform_fitness": "Instagram",
+    "best_format_fitness": "Long-form video",
+    "best_dow_fitness": "Sunday",
+    "top_region_fitness": "UK"
+  }
+}

@@ -1,0 +1,21 @@
+Platform,Format_Group,n_posts,pooled_er
+Instagram,Image post,18,0.124688
+Instagram,Live stream,19,0.171376
+Instagram,Long-form video,19,0.14085
+Instagram,Short video,51,0.115694
+Instagram,Text post,23,0.130987
+TikTok,Image post,26,0.101442
+TikTok,Live stream,15,0.071383
+TikTok,Long-form video,24,0.134414
+TikTok,Short video,36,0.125925
+TikTok,Text post,17,0.099582
+Twitter,Image post,25,0.10103
+Twitter,Live stream,19,0.097068
+Twitter,Long-form video,21,0.111976
+Twitter,Short video,39,0.102464
+Twitter,Text post,17,0.093677
+YouTube,Image post,14,0.142144
+YouTube,Live stream,29,0.128201
+YouTube,Long-form video,18,0.099493
+YouTube,Short video,48,0.116961
+YouTube,Text post,19,0.114414
